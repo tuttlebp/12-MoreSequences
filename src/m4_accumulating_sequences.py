@@ -399,7 +399,6 @@ def rectangles_from_circles(circles):
     #            in this function, so DON'T draw anything in here!
     ###########################################################################
     # -------------------------------------------------------------------------
-
     sequence = []
     for k in range(len(circles)):
         r = circles[k].radius
@@ -407,7 +406,7 @@ def rectangles_from_circles(circles):
         top_left = rg.Point(center.x + r, center.y + r)
         top_right = rg.Point(center.x - r, center.y - r)
         sequence = sequence + [rg.Rectangle(top_left, top_right)]
-        return sequence
+    return sequence
 
 
 # -----------------------------------------------------------------------------
